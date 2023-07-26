@@ -1,8 +1,9 @@
-import animateTitle from './features/animateTitle'
-import createBadge from './features/createBasge'
-import './styles/style.css'
+import Swiper from 'swiper'
+import 'swiper/css'
+import { Navigation } from 'swiper/modules'
 
-console.log('Welcome to Vite + JS + Webflow!')
-
-createBadge()
-animateTitle()
+const swiper = new Swiper('.swiper.showcase__template', {
+  modules: [Navigation],
+  slidesPerView: 'auto',
+  centeredSlides: true,
+})
